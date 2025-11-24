@@ -8,23 +8,33 @@ Se desarrollará utilizando **HTML, PHP y JavaScript**, y **MySQL** como sistema
 
 ## Instalación del sistema:
 
-1. Descargar e instalar **XAMPP** desde [https://www.apachefriends.org/es/download.html](https://www.apachefriends.org/es/download.html), seleccionando el sistema operativo correspondiente.
+1. Descargar e instalar **XAMPP** desde [https://www.apachefriends.org/es/download.html], seleccionando el sistema operativo correspondiente.
 2. Abrir el **Panel de Control de XAMPP** y verificar que **Apache** y **MySQL** estén funcionando.  
-3. Abrir el **Panel de Control de XAMPP** y buscar (`Config → php.ini`) y habilitar las siguientes extensiones quitando el `;` del inicio:  
+3. Abrir el **Panel de Control de XAMPP** y buscar (`Config → php.ini`) y habilitar las siguientes extensiones quitando    el `;` del inicio:  
                      extension=openssl
                      extension=curl
                      extension=zip
                      extension=mbstring
-Guardar el archivo y reiniciar Apache.
-4. Configurar las variables de entorno agregando al PATH: 
-C:\xampp\php\
+   Guardar el archivo y reiniciar Apache.
+4. Configurar las variables de entorno agregando al PATH:  C:\xampp\php\
+5. Descomprimir e instalar Composer desde "Composer-Setup.rar", Durante la instalación, cuando pida la ruta de PHP, seleccionar: C:\xampp\php\php.exe
+6. Verificar la instalación de Composer abriendo CMD y escribiendo: composer -v
 
 
-3.- En el panel de control buscar el boton "Config" de Apache y buscar la opción "php.ini".
-4.- En el archivo "php.ini", buscar :  ;extension=openssl  ;extension=curl  ;extension=zip  ;extension=mbstring  ,quitar el ";", y reiniciar el servicio.
+
+Instalación de librerías
+
+
+
+
+
 5.- Configurar las variables de entorno del sistema, agregar en el path "C:\xampp\php\".
 6.- Buscar el archivo "Composer-Setup.rar" (ubicado en está carpeta), descomprimirlo e instalarlo, verificando que cuando el instalador pida la ruta de PHP se debe seleccionar C:\xampp\php\php.exe.
 7.- Para verificar la instalación abrir "simbolo del sistema" en la ruta "C:\xampp\php" y escribir : composer -v , deberá mostrar la versión instalada.
+
+
+
+
 
 
 ## Instalación de las librerias:
