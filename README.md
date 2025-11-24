@@ -1,69 +1,36 @@
-**SIGERH** 
+# SIGERH - Sistema de Gestión de Recursos Humanos
 
-(Sistema de Gestión de Recursos Humanos) es una aplicación web para el departamento de Recursos Humanos, diseñada para automatizar y centralizar los procesos de nómina, control de asistencia y gestión de expedientes electrónicos del personal.  
-El sistema permitirá reducir la carga administrativa, minimizar errores y mejorar la eficiencia en la gestión del capital humano.  
-Se desarrollará utilizando **HTML, PHP y JavaScript**, y **MySQL** como sistema gestor de base de datos.
+**SIGERH** es una aplicación web para el departamento de Recursos Humanos, diseñada para automatizar y centralizar los procesos de nómina, control de asistencia y gestión de expedientes electrónicos del personal.  
+Se desarrollará utilizando **HTML, PHP y JavaScript**, y **MySQL** como gestor de base de datos.
 
 ---
 
-## Instalación del sistema:
+## Guía de instalación rápida
 
-1. Descargar e instalar **XAMPP** desde [https://www.apachefriends.org/es/download.html], seleccionando el sistema operativo correspondiente.
-2. Abrir el **Panel de Control de XAMPP** y verificar que **Apache** y **MySQL** estén funcionando.  
-3. Abrir el **Panel de Control de XAMPP** y buscar (`Config → php.ini`) y habilitar las siguientes extensiones quitando    el `;` del inicio:  
-                     extension=openssl
-                     extension=curl
-                     extension=zip
-                     extension=mbstring
-   Guardar el archivo y reiniciar Apache.
-4. Configurar las variables de entorno agregando al PATH:  C:\xampp\php\
-5. Descomprimir e instalar Composer desde "Composer-Setup.rar", Durante la instalación, cuando pida la ruta de PHP, seleccionar: C:\xampp\php\php.exe
-6. Verificar la instalación de Composer abriendo CMD y escribiendo: composer -v
+| 🔹 Paso | 🔧 Sección | 📝 Acción | 📂 Ruta / Comando / Archivo | ⚠ Notas |
+|---------|------------|-----------|----------------------------|----------|
+| 1 | XAMPP | Descargar e instalar | [XAMPP](https://www.apachefriends.org/es/download.html) | Seleccionar el sistema operativo correcto |
+| 2 | XAMPP | Abrir panel de control y verificar servicios | Apache y MySQL | Ambos deben estar en “Running” |
+| 3 | XAMPP | Configurar php.ini | `C:\xampp\php\php.ini` | Habilitar extensiones: `openssl`, `curl`, `zip`, `mbstring` (quitar `;` del inicio) y reiniciar Apache |
+| 4 | Variables de entorno | Agregar PHP al PATH | `C:\xampp\php\` | Para que CMD reconozca PHP |
+| 5 | Composer | Instalar Composer | `Composer-Setup.rar` | Seleccionar PHP: `C:\xampp\php\php.exe` durante la instalación |
+| 6 | Composer | Verificar instalación | `composer -v` | Debe mostrar la versión instalada |
+| 7 | Librerías | Instalar PHPOffice | `composer require phpoffice/phpspreadsheet` | Ejecutar en CMD dentro de `C:\xampp\php` |
+| 8 | Librerías | Instalar PHPMailer | `composer require phpmailer/phpmailer` | Ejecutar en CMD dentro de `C:\xampp\php` |
+| 9 | Librerías | Instalar TCPDF | `composer require tecnickcom/tcpdf` | Ejecutar en CMD dentro de `C:\xampp\php` |
+| 10 | Base de datos | Descomprimir base de datos | `BaseDatos.rar` | Guardar en escritorio |
+| 11 | Base de datos | Abrir phpMyAdmin | [http://localhost/phpmyadmin](http://localhost/phpmyadmin) | Crear nueva base de datos |
+| 12 | Base de datos | Crear base de datos | `nomina_db` | Seleccionar la base y usar **Importar** archivo SQL descomprimido |
+| 13 | Código del sistema | Descomprimir proyecto SIGERH | `SIGERH.rar` | Guardar en `C:\xampp\htdocs` |
+| 14 | Acceso al sistema | Abrir navegador | [http://localhost/SIGERH](http://localhost/SIGERH) | Página de login |
+| 15 | Acceso al sistema | Ingresar usuario y contraseña | Usuario: `Admin`<br>Contraseña: `1234` | Cambiar contraseña por seguridad |
 
+---
 
-Instalación de librerías
+### 💡 Notas finales
 
-Abrir CMD en la ruta C:\xampp\php y ejecutar:
+- Mantener la **estructura de carpetas** al descomprimir archivos.  
+- Si phpMyAdmin da error al importar archivos grandes, revisar `upload_max_filesize` y `post_max_size` en `php.ini`.  
+- Mantener **XAMPP actualizado** para evitar incompatibilidades.  
 
-composer require phpoffice/phpspreadsheet
-composer require phpmailer/phpmailer
-composer require tecnickcom/tcpdf
-
-
-
-
-
-5.- Configurar las variables de entorno del sistema, agregar en el path "C:\xampp\php\".
-6.- Buscar el archivo "Composer-Setup.rar" (ubicado en está carpeta), descomprimirlo e instalarlo, verificando que cuando el instalador pida la ruta de PHP se debe seleccionar C:\xampp\php\php.exe.
-7.- Para verificar la instalación abrir "simbolo del sistema" en la ruta "C:\xampp\php" y escribir : composer -v , deberá mostrar la versión instalada.
-
-
-
-
-
-
-## Instalación de las librerias:
-
-8.- Abrir "simbolo del sistema" en la ruta "C:\xampp\php" y escribir : composer require phpoffice/phpspreadsheet
-9.- Abrir "simbolo del sistema" en la ruta "C:\xampp\php" y escribir : composer require phpmailer/phpmailer
-10.- Abrir "simbolo del sistema" en la ruta "C:\xampp\php" y escribir : composer require tecnickcom/tcpdf
-
-
-## Configuración de la base de datos:
-
-11.- Descomprimir el archivo "BaseDatos.rar" (ubicado en está carpeta), guardar en el escritorio. 
-12.- En el navegar escribir : http://localhost/phpmyadmin
-13.- Seleccionar la opción "nueva" para crear la base de datos que debe nombrarse como "nomina_db".
-14.- Seleccionar la base creada "nomina_db", y buscar la opción "Importar", seleccionar el archivo guardado en el escritorio(punto 11).
-
-
-## el código del sistema:
-
-15.- Descomprimir el archivo "SIGERH.rar" (ubicado en está carpeta), está carpeta debe estar en la ruta "C:\xampp\htdocs". 
-
-
-Para entrar al sistema:
-
-16.- En el navegar escribir : http://localhost/SIGERH 
-17.- Pedirá datos de acceso  Usuario : Admin    Contraseña : 1234
 
