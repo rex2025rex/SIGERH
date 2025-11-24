@@ -21,8 +21,13 @@ Se desarrollará utilizando **HTML, PHP y JavaScript**, y **MySQL** como sistema
 6. Verificar la instalación de Composer abriendo CMD y escribiendo: composer -v
 
 
-
 Instalación de librerías
+
+Abrir CMD en la ruta C:\xampp\php y ejecutar:
+
+composer require phpoffice/phpspreadsheet
+composer require phpmailer/phpmailer
+composer require tecnickcom/tcpdf
 
 
 
