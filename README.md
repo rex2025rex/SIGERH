@@ -31,11 +31,11 @@ Para configurar la base de datos:
 
 Para el código del sistema:
 
-12.- Descomprimir el archivo "SIGERH.rar" (ubicado en está carpeta), está carpeta debe estar en la ruta "C:\xampp\htdocs". 
+15.- Descomprimir el archivo "SIGERH.rar" (ubicado en está carpeta), está carpeta debe estar en la ruta "C:\xampp\htdocs". 
 
 
 Para entrar al sistema:
 
-13.- En el navegar escribir : http://localhost/SIGERH 
-14.- Pedirá datos de acceso  Usuario : Admin    Contraseña : 1234
+16.- En el navegar escribir : http://localhost/SIGERH 
+17.- Pedirá datos de acceso  Usuario : Admin    Contraseña : 1234
 
