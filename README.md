@@ -8,8 +8,18 @@ Se desarrollará utilizando **HTML, PHP y JavaScript**, y **MySQL** como sistema
 
 ## Instalación del sistema:
 
-1. Descargar e instalar **XAMPP** desde [https://www.apachefriends.org/es/download.html](https://www.apachefriends.org/es/download.html), seleccionando el sistema operativo correspondiente.  
-2.- Una vez instalado abrir el panel de control y verificar que Apache y MySQL, esten funcionando.
+1. Descargar e instalar **XAMPP** desde [https://www.apachefriends.org/es/download.html](https://www.apachefriends.org/es/download.html), seleccionando el sistema operativo correspondiente.
+2. Abrir el **Panel de Control de XAMPP** y verificar que **Apache** y **MySQL** estén funcionando.  
+3. Abrir el **Panel de Control de XAMPP** y buscar (`Config → php.ini`) y habilitar las siguientes extensiones quitando el `;` del inicio:  
+                     extension=openssl
+                     extension=curl
+                     extension=zip
+                     extension=mbstring
+Guardar el archivo y reiniciar Apache.
+4. Configurar las variables de entorno agregando al PATH: 
+C:\xampp\php\
+
+
 3.- En el panel de control buscar el boton "Config" de Apache y buscar la opción "php.ini".
 4.- En el archivo "php.ini", buscar :  ;extension=openssl  ;extension=curl  ;extension=zip  ;extension=mbstring  ,quitar el ";", y reiniciar el servicio.
 5.- Configurar las variables de entorno del sistema, agregar en el path "C:\xampp\php\".
