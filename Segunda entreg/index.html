@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Principal - SIGERH</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+    <header class="header">
+        <h1>SIGERH</h1>
+        <p>Sistema de Gestión de Recursos Humanos</p>
+        <h2>Bienvenida Elizabeth Orozco</h2>
+    </header>
+
+    <div class="container">
+       <button onclick="irRegistro()">Registrar Empleado</button>
+       <button onclick="moduloPendiente('Reportes')">Reportes</button>      
+       <button class="logout-btn" onclick="cerrarSesion()">Cerrar Sesión</button>
+
+     <!-- Funciones pendietes de dessarrollar
+        <button onclick="window.location.href='registrar_empleado.php'">Registrar Empleado</button>
+        <button onclick="window.location.href='reportes.php'">Reportes</button>
+        <button onclick="alert('Función 3 pendiente');">Gestionar Puestos</button>
+        <button onclick="alert('Función 4 pendiente');">Generar Reportes</button>
+        <button onclick="alert('Función 5 pendiente');">Configuración</button>
+        <button class="logout-btn" onclick="window.location.href='logout.php'">Cerrar Sesión</button>
+      -->
+        
+    </div>
+
+
+<script>
+function irRegistro() {
+    window.location.href = "registrar_empleado.html";
+}
+
+function moduloPendiente(modulo) {
+    alert("El módulo '" + modulo + "' se encuentra en desarrollo para la siguiente iteración.");
+}
+
+function cerrarSesion() {
+    alert("Funcionalidad de cierre de sesión pendiente de implementar en el backend.");
+}
+</script>
+
+
+</body>
+</html>
