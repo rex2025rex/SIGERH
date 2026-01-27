@@ -1,0 +1,75 @@
+/* ==============================
+   Estilos generales
+   ============================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==============================
+   Encabezado
+   ============================== */
+.header {
+    background-color: #4F81BD;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.header h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* ==============================
+   Contenedor principal
+   ============================== */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+/* ==============================
+   Botones
+   ============================== */
+button {
+    display: block;
+    width: 260px;
+    padding: 15px;
+    margin: 15px auto;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4F81BD;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a65a3;
+}
+
+/* ==============================
+   Botón cerrar sesión
+   ============================== */
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
